@@ -1,0 +1,32 @@
+{
+  "name": "WasteCollection",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "weight": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "center": {
+      "type": "belongsTo",
+      "model": "center",
+      "foreignKey": "centerId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

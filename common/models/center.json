@@ -1,0 +1,30 @@
+{
+  "name": "center",
+  "plural": "centers",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "district": {
+      "type": "belongsTo",
+      "model": "district",
+      "foreignKey": "districtId"
+    },
+    "wasteCollections": {
+      "type": "hasMany",
+      "model": "WasteCollection",
+      "foreignKey": "centerId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

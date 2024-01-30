@@ -1,0 +1,7 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "mongodb",
+    "url": "mongodb+srv://appuser1:mongoapp1@myapp.djatohq.mongodb.net/appdb?retryWrites=true&w=majority"
+  }
+}
