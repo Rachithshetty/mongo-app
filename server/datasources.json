@@ -2,6 +2,6 @@
   "db": {
     "name": "db",
     "connector": "mongodb",
-    "url": "mongodb+srv://appuser1:mongoapp1@myapp.djatohq.mongodb.net/appdb?retryWrites=true&w=majority"
+    "url": "mongodb+srv://<user>:<password>@<cluster>.mongodb.net/<dbname>?retryWrites=true&w=majority"
   }
 }
