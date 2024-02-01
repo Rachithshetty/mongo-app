@@ -9,6 +9,10 @@
     "recyclable": {
       "type": "boolean",
       "required": true
+    },
+    "name": {
+       "type": "string",
+       "required": true
     }
   },
   "validations": [],
